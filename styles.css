@@ -1,0 +1,18 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --header-font: "Raleway", sans-serif;
+  --accent: #2196f3;
+  --black-text: #212121;
+  --grey-text: #757575;
+  --black-hero: #2f303a;
+  --grey-button: #f5f4fa;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--grey-text);
+}
+
+ul {
+  list-style: none;
+}
