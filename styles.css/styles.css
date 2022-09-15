@@ -1,18 +1,21 @@
 :root {
   --main-font: "Roboto", sans-serif;
-  --header-font: "Raleway", sans-serif;
+  --logo-font: "Raleway", sans-serif;
   --accent: #2196f3;
   --black-text: #212121;
   --grey-text: #757575;
   --black-background: #2f303a;
   --grey-button: #f5f4fa;
+  --white: #fff;
+  --black: #000;
+  --grey: #eee;
 }
 
 body {
   font-family: var(--main-font);
-  font-weight: 500;
   color: var(--grey-text);
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 .list {
@@ -21,26 +24,25 @@ body {
 
 .logo {
   text-decoration: none;
-  font-family: var(--header-font);
+  font-family: var(--logo-font);
   font-size: 26px;
   font-weight: 700;
 }
 
 .black {
-  color: #000;
+  color: var(--black);
 }
 
 .white {
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-item,
 .nav-item:visited {
   text-decoration: none;
   color: var(--black-text);
-  font-family: var(--main-font);
-  font-size: 14px;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .active,
@@ -51,6 +53,8 @@ body {
 .header-contact {
   color: inherit;
   text-decoration: none;
+  letter-spacing: 0.02em;
+  font-weight: 500;
 }
 
 .header-contact:hover,
@@ -59,7 +63,7 @@ body {
 }
 
 .hero-heading {
-  color: #fff;
+  color: var(--white);
   background-color: var(--black-background);
   text-transform: uppercase;
   font-weight: 900;
@@ -69,31 +73,36 @@ body {
 }
 
 .primary-btn {
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  color: var(--white);
   background-color: var(--accent);
   border: none;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  letter-spacing: 0.06em;
   font-size: 16px;
+
   cursor: pointer;
 }
 
 .radio-btn {
   color: var(--black-text);
-  font-weight: 700;
-  background-color: #eeeeee;
+  background-color: var(--grey);
   border: none;
+
+  font-family: var(--main-font);
+  font-weight: 500;
   font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
   cursor: pointer;
 }
 
 .radio-btn:hover,
 .radio-btn:focus {
-  color: #fff;
-  font-weight: 700;
+  color: var(--white);
   background-color: var(--accent);
-  border: none;
-  font-size: 16px;
 }
 
 .hidden {
@@ -102,23 +111,28 @@ body {
 
 .first-section-heading {
   font-weight: 700;
-  font-size: 14px;
   color: var(--black-text);
   text-transform: uppercase;
 }
 
 .first-section-paragraph {
-  font-size: 14px;
   line-height: 1.71;
 }
 
 .section-heading {
   font-weight: 700;
   color: var(--black-text);
+  font-size: 36px;
 }
 
 .team-name {
   color: var(--black-text);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.team-text {
+  font-size: 16px;
 }
 
 footer {
@@ -127,7 +141,8 @@ footer {
 
 .address-link,
 .address-link:visited {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white);
+  opacity: 0.6;
   text-decoration: none;
   font-weight: 400;
   font-style: normal;
@@ -136,7 +151,7 @@ footer {
 
 .first,
 .first:visited {
-  color: #fff;
+  opacity: 1;
 }
 
 .address-link:hover,
@@ -144,19 +159,18 @@ footer {
   color: var(--accent);
 }
 
-.products li {
-  border: 1px solid #eee;
+.product {
+  border: 1px solid var(--grey);
 }
 
-.products h2 {
+.product-heading {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--black-text);
 }
 
-.products p {
-  font-weight: 400;
+.product-text {
   font-size: 16px;
   line-height: 1.88;
 }
