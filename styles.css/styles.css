@@ -111,6 +111,7 @@ body {
 
 .first-section-heading {
   font-weight: 700;
+  font-size: 14px;
   color: var(--black-text);
   text-transform: uppercase;
 }
@@ -166,6 +167,7 @@ body {
 .product-heading {
   font-weight: 700;
   line-height: 2;
+  font-size: 18px;
   letter-spacing: 0.06em;
   color: var(--black-text);
 }
